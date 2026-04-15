@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - Smilehub Dentist Clinic</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Book your dental appointment at Smilehub easily online.">
+</head>
+<body class="booking-bg">
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Smile<span style="color: var(--primary-blue);">hub</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main style="min-height: calc(100vh - 200px); padding-top: 80px;">
+    <section style="min-height: 80vh; display: flex; align-items: center;">
+      <div class="booking-form fade-in" style="animation-delay: 0.2s;">
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--dark-blue);">Book Your Appointment</h2>
+        <p style="text-align: center; margin-bottom: 2rem; color: var(--dark-blue);">Fill out the form below and we'll contact you to confirm.</p>
+        
+        <form class="booking-form">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="date">Preferred Date *</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time">
+          </div>
+          
+          <div class="form-group">
+            <label for="service">Service Required *</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="cleaning">Teeth Cleaning</option>
+              <option value="root-canal">Root Canal Therapy</option>
+              <option value="implants">Dental Implants</option>
+              <option value="whitening">Teeth Whitening</option>
+              <option value="orthodontics">Orthodontics</option>
+              <option value="cosmetic">Cosmetic Dentistry</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Additional Notes</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any specific concerns or requests?"></textarea>
+          </div>
+          
+          <button type="submit" class="btn" style="width: 100%; font-size: 1.1rem;">Submit Booking Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h3>Smilehub</h3>
+        <p>Expert dental care for a confident smile.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul style="list-style: none;">
+          <li><a href="index.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+          <li><a href="services.html" style="color: #ccc; text-decoration: none;">Services</a></li>
+          <li><a href="booking.html" style="color: #ccc; text-decoration: none;">Booking</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+        <p><i class="fas fa-envelope"></i> info@smilehub.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Dental St, City, State 12345</p>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p style="margin-top: 2rem; opacity: 0.8;">&copy; 2024 Smilehub. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
